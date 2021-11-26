@@ -48,9 +48,9 @@ export function ContactFormReceivedMessage() {
     case "contact-suggestion":
       return (
         <div className={styles.receivedFormThanks}>
-          <strong>Thank you for your submission!</strong>
+          <strong>Thank you for your suggestion!</strong>
           <div>
-            We read every message, but can't respond personally to all of them.
+            We read every message, but don't always use every suggestion.
             We hope you understand.
           </div>
         </div>
