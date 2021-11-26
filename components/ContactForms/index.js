@@ -1,8 +1,8 @@
 /*
 This form uses Netlify Forms, which works by parsing the statically-generated HTML
-at build time to find the html form element.
+at build time to find the HTML form element.
 This means that the form MUST appear on some statically-generated page of the site
-in order to function. (So it *cannot* be lazy-loaded everywhere it's used.)
+in order to function. (So it *cannot* be lazy-loaded everywhere it's used).
 */
 
 import { createContext, useContext, useRef } from "react";
@@ -45,12 +45,16 @@ export function ContactFormReceivedMessage() {
           <div>We will try to get back to you shortly.</div>
         </div>
       );
-			case "contact-suggestion":
-				return (
-					<div className={styles.receivedFormThanks}>
-						<strong>Thank you for your suggestion!</strong>
-					</div>
-				);
+    case "contact-suggestion":
+      return (
+        <div className={styles.receivedFormThanks}>
+          <strong>Thank you for your submission!</strong>
+          <div>
+            We read every message, but can't respond personally to all of them.
+            We hope you understand.
+          </div>
+        </div>
+      );
     default:
       return null;
   }
