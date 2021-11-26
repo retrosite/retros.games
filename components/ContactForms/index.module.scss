@@ -1,5 +1,5 @@
 .receivedFormThanks {
-  background: $green-200;
+  background: #1f1c36;
   padding: 16px 24px;
   text-align: left;
 }
@@ -10,7 +10,7 @@
 
   button {
     /*
-      The submit button is a Clickable component, which has a margin
+      The submit button is a Clickable component, which has a margin that
       by default that needs to be disabled.
     */
     margin: 0 !important;
