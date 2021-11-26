@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "fresh": "rm -rf node_modules .next yarn.lock && yarn cache clean && yarn install",
     "format": "prettier --write ."
   },
