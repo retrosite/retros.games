@@ -1,0 +1,23 @@
+$phone: 600px;
+
+.not_found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: $phone) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.text {
+  & > * {
+    margin: 10px 0;
+
+    &:first-child {
+      font-weight: $semi-bold;
+    }
+  }
+}

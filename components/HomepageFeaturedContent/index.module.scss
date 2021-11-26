@@ -1,0 +1,189 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "title featured"
+    "subtitle featured";
+  gap: 30px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  grid-area: title;
+  background-image: linear-gradient(90deg,#db469f,#7891d5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  font-family: Space Grotesk;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  font-family: $sans;
+  font-size: 16px;
+  text-align: left;
+  color: $gray-300;
+  bottom: 20px;
+  position: relative;
+}
+
+.featured {
+  grid-area: featured;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "featured";
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.itemButtons {
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    margin: 0 !important;
+    padding: 8px 12px !important;
+    min-width: unset !important;
+    min-height: 38px !important;
+    background: transparent !important;
+    color: white !important;
+
+    &:hover,
+    &:focus {
+      background: black !important;
+    }
+  }
+}
+
+.itemFigure {
+  margin: 0;
+}
+
+.itemFigure > *:not(.itemCaption) {
+  margin: 0 !important;
+}
+
+.itemCaption {
+  text-align: left;
+  color: rgba(240,246,252,0.7);
+  font-style: italic;
+  margin-top: 8px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "left slides right";
+}
+
+.slides {
+  grid-area: slides;
+
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+
+  // Adjust gracefully when slides are different heights.
+  transition: max-height 400ms ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  transition: transform 400ms ease-in-out;
+}
+
+.slide[data-visible="false"] {
+  visibility: hidden;
+
+  // Delay the visibility so it waits to dissapear.
+  transition: transform 400ms ease-in-out, visibility 0ms linear 400ms;
+}
+
+.slide[data-visible="true"] {
+  visibility: visible;
+}
+
+.arrowLeft,
+.arrowRight {
+  color: white;
+  font-size: 48px;
+  width: 50px;
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: default;
+  }
+}
+
+.arrowLeft {
+  grid-area: left;
+}
+
+.arrowRight {
+  grid-area: right;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "slides slides"
+      "left right";
+    row-gap: 20px;
+  }
+
+  .arrowLeft {
+    place-self: center end;
+  }
+
+  .arrowRight {
+    place-self: center start;
+  }
+}
+
+.game {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: black;
+}
+
+.gameLink {
+  display: block;
+}

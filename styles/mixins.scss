@@ -1,0 +1,84 @@
+// Reusable snippets of CSS.
+
+// Fade group of items when hovering.
+@mixin hover {
+  &:hover > *:not(:hover) {
+    opacity: 0.25 !important;
+  }
+}
+
+// Remove vertical margins from first and last elements.
+@mixin trim-v-margins {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Remove horizontal margins from first and last elements.
+@mixin trim-h-margins {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// Truncate text after 1 line.
+@mixin truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// Truncate text after N about of lines.
+@mixin line-clamp($N) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $N;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// Fade in.
+@mixin fade-in {
+  animation: fade_in 1s ease forwards;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+// Fade in white. Unused.
+@mixin fade-in-white {
+  animation: fade_in_white 2s ease forwards;
+}
+
+@keyframes fade_in_white {
+  0% {
+    -webkit-text-fill-color: rgba(255,255,255,1);
+  }
+  100% {
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin firefox-only {
+  @at-root {
+    @-moz-document url-prefix() {
+      & {
+        @content;
+      }
+    }
+  }
+}

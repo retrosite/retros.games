@@ -1,0 +1,65 @@
+- name: Action
+  slug: action
+  description: Games featuring action and adventure!
+  games:
+    - alien-hominid
+    - color-tunnel
+    - death-run-3d
+    - fall-beans
+    - fort-building
+    - ten-more-bullets
+- name: Platformer
+  slug: platformer
+  description: Games featuring platforming!
+  games:
+    - short-life
+    - slope
+    - vex-3
+    - vex-4
+- name: Racing
+  slug: racing
+  description: Games featuring racing!
+  games:
+    - burnout-drift-3
+    - hexgl
+    - moto-trials
+- name: Idle
+  slug: idle
+  description: Games featuring idling!
+  games:
+    - chungus-clicker
+    - cookie-clicker
+    - cookie-clicker-classic
+- name: Casual
+  slug: casual
+  description: Games featuring casual elements!
+  games:
+    - city-wars
+    - helix-jump
+    - paper-io-2
+    - rolling-sky
+    - snowbattle-io
+- name: Puzzle
+  slug: puzzle
+  description: Games featuring puzzle elements!
+  games:
+    - fireboy-and-watergirl
+    - tetris
+    - the-worlds-hardest-game
+- name: Sandbox
+  slug: sandbox
+  description: Games featuring sandbox elements!
+  games:
+    - minecraft-classic
+- name: Arcade
+  slug: arcade
+  description: Various arcade games!
+  games:
+    - road-crossing
+- name: Miscellaneous
+  slug: miscellaneous
+  description: Various miscellaneous games!
+  games:
+    - energy-skate-park
+    - google-maps-snake
+    - line-rider

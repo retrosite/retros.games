@@ -1,0 +1,146 @@
+$tablet: 1200px;
+$phone: 700px;
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: $black;
+  color: $white;
+  font-family: $sans;
+  overflow: hidden;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  border: 10px solid;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #db469f 70%, #9fb2e6 90%, #f0f6fc);
+
+  &[data-big="true"] {
+    min-height: 250px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: 100%;
+  @include hover;
+  z-index: 1;
+
+  @media (max-width: $phone) {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.button {
+  display: none;
+
+  @media (max-width: $phone) {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    color: white;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.link {
+  padding: 10px 15px;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+
+  @media (max-width: $phone) {
+    width: 100%;
+  }
+}
+
+.break {
+  flex-grow: 1;
+
+  @media (max-width: $tablet) {
+    flex-grow: 0;
+  }
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: $white;
+  opacity: 1 !important;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+
+  @media (max-width: $tablet) {
+    position: static;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.header[data-big="true"] .title {
+  flex-direction: column;
+}
+
+.text {
+  margin-left: 20px;
+  font-family: Retronoid;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  color: $white;
+  font-style: italic;
+
+  @include firefox-only {
+    background: linear-gradient(90deg, #db469f, #7891d5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  span {
+    opacity: 0;
+    @include fade-in;
+  }
+
+  @for $i from 1 through 12 {
+    span:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.075}s;
+    }
+  }
+}
+
+.header[data-big="true"] .text {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: $phone) {
+  .nav[data-open="true"] .button {
+    margin-bottom: 10px;
+  }
+
+  .nav[data-open="false"] .link {
+    display: none;
+  }
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+}

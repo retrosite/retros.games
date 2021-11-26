@@ -1,0 +1,75 @@
+.clickable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+  color: inherit;
+  border: 1px solid $black;
+  font-family: $sans;
+  font-size: 0.9em;
+  text-decoration: none;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 20px 15px;
+  padding: 10px 15px;
+  background: #0d0a23;
+  color: $white;
+
+  &:not(:disabled):hover {
+    background: #0d0a23;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &[data-icon="true"][data-text="false"] {
+    padding: 0;
+  }
+
+  &[data-text="true"] {
+    padding: 10px 15px;
+  }
+
+  &[data-active="false"] {
+    background: none;
+
+    &:hover {
+      background: #0d0a23;
+    }
+  }
+
+  &[data-active="true"] {
+    background: #0d0a23;
+  }
+}
+
+.clickable[data-design="rounded"] {
+  min-width: 50px;
+  min-height: 50px;
+  margin: 20px 15px;
+  padding: 10px 15px;
+  border-radius: 999px;
+  background: $gray-800;
+  color: $white;
+
+  &:hover {
+    background: #0d0a23;
+  }
+}
+
+.text {
+  text-align: center;
+  font-family: $sans;
+  font-weight: $medium;
+  @include truncate;
+}
+
+.clickable[data-icon="true"][data-text="true"] .icon {
+  margin-right: 0.6em;
+}
+
+.clickable[data-icon="true"][data-text="false"] .icon {
+  font-size: 1.2em;
+}

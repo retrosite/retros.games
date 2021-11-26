@@ -1,0 +1,31 @@
+$phone: 500px;
+
+.section {
+	background: #13102B;
+	color: $white;
+
+  &:last-child {
+    flex-grow: 1;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: $page;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+
+  @media (max-width: $phone) {
+    padding: 20px;
+  }
+}
+
+.section[data-width="narrow"] > .wrapper {
+  max-width: $page-wide;
+}
+
+.section[data-width="wide"] > .wrapper {
+  max-width: $page-wide;
+}

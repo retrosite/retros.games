@@ -1,0 +1,37 @@
+$wrap: 600px;
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #13102b;
+  color: $white;
+  font-family: $sans;
+  overflow: hidden;
+
+  @media (max-width: $wrap) {
+    flex-direction: column-reverse;
+  }
+}
+
+.discord {
+  i {
+    font-size: 48px;
+  }
+}
+
+.copyright {
+  text-align: center;
+
+  @media (max-width: $wrap) {
+    margin-top: 10px;
+  }
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

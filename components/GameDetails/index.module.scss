@@ -1,0 +1,21 @@
+.metadata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $white;
+  text-align: center;
+
+  br {
+    content: "";
+    width: 100%;
+  }
+
+  & > div {
+    margin: 5px 10px;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
