@@ -20,12 +20,12 @@ What you need to know if you're just adding games or otherwise editing `.mdx` fi
 - **[Markdown](https://www.markdownguide.org/)**
 - **[MDX](https://mdxjs.com/)**
 - **[YAML](https://wikipedia.org/wiki/YAML)**
+- **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)**
 
 ### Advanced
 
 What you also need to know if you're editing the website in more depth:
 
-- **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)**
 - **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)**
 - **[Sass](https://sass-lang.com)**
 - **[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)**
