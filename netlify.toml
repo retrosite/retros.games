@@ -1,9 +1,9 @@
 [build]
   publish = "out"
-  command = "yarn build"
+  command = "yarn build && yarn export"
 
 [context.deploy-preview]
-  command = "yarn build"
+  command = "yarn build && yarn export"
 
 [[headers]]
   for = "/*"
