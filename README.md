@@ -4,10 +4,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Build the site locally
 
-1. [Install Node](https://nodejs.org/en/download/)
-2. [Install Yarn](https://classic.yarnpkg.com/en/docs/install)
-3. Run `yarn install && yarn dev`
-4. Open [http://localhost:3000](http://localhost:3000) to see the site
+1. [Install Node](https://nodejs.org/en/download/).
+2. [Install Yarn](https://classic.yarnpkg.com/en/docs/install).
+3. Run `yarn install && yarn dev`.
+4. Open [http://localhost:3000](http://localhost:3000) to see the site.
+
+## Developing
+
+To develop when you can't use Visual Studio Code:
+1. Visit [the repository's github.dev page](https://github.dev/retrosite/retros.games)
+2. Make your changes and click the Source Control button on the side.
+3. Type in a good commit message and click the checkmark at the top once you're ready to deploy.
+4. Open [https://retrosgames.netlify.app](https://retrosgames.netlify.app/) to see the site.
 
 ## Background knowledge
 
