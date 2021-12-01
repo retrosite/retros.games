@@ -8,7 +8,7 @@ import { PageContext } from "../../pages/_app";
 const Head = () => {
   let { title, description, location, thumbnail } = useContext(PageContext);
 
-  title = [siteTitle, title].filter((e) => e).join(" - ");
+  title = [title, siteTitle].filter((e) => e).join(" - ");
   description = description || siteDescription;
   location = location || siteLocation;
 
