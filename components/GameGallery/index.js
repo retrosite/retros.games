@@ -38,7 +38,7 @@ export default function GameGallery({ show = "genre" }) {
 
   const filteredGames = useMemo(() => {
     if (view === "alphabetical") {
-      return games.sort((a, b) => a.localeCompare(b));
+      return sorted_games;
     }
     if (view === "search") {
       return sorted_games.filter((game) =>
