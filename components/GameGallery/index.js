@@ -15,7 +15,7 @@ GameGallery.propTypes = {
 // Gallery that shows all games in various ways with tabs. Show by genre or all.
 export default function GameGallery({ show = "genre" }) {
   const { games } = useContext(PageContext);
-  const sorted_games = games.sort(function(a, b) {
+  const sorted_games = [...games].sort(function(a, b) {
 	var nameA = a.name.toUpperCase();
 	var nameB = b.name.toUpperCase();
 	if (nameA < nameB) {
