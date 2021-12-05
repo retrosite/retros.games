@@ -15,19 +15,16 @@ GameGallery.propTypes = {
 // Gallery that shows all games in various ways with tabs. Show by genre or all.
 export default function GameGallery({ show = "genre" }) {
   const { games } = useContext(PageContext);
-  const genre_names = genres.map((genre) => genre.name);
-  const sorted_games = [...games].sort((a, b) => {
-    const ati = genre_names.indexOf(a.genre);
-    const bti = genre_names.indexOf(b.genre);
-    if (ati === -1) return 1;
-    if (bti === -1) return -1;
-    if (ati == bti) {
-      return (
-        genres[ati].games.indexOf(a.slug) -
-        genres[bti].games.indexOf(b.slug)
-      );
-    }
-    return ati - bti;
+  const sorted_games = games.sort(function(a, b) {
+		var nameA = a.name.toUpperCase();
+		var nameB = b.name.toUpperCase();
+		if (nameA < nameB) {
+			return -1;
+		}
+		if (nameA > nameB) {
+			return 1;
+		}
+		return 0;
   });
 
   const [tab, setTab] = useState(show);
