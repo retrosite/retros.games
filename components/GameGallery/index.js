@@ -16,15 +16,15 @@ GameGallery.propTypes = {
 export default function GameGallery({ show = "genre" }) {
   const { games } = useContext(PageContext);
   const sorted_games = games.sort(function(a, b) {
-		var nameA = a.name.toUpperCase();
-		var nameB = b.name.toUpperCase();
-		if (nameA < nameB) {
-			return -1;
-		}
-		if (nameA > nameB) {
-			return 1;
-		}
-		return 0;
+	var nameA = a.name.toUpperCase();
+	var nameB = b.name.toUpperCase();
+	if (nameA < nameB) {
+		return -1;
+	}
+	if (nameA > nameB) {
+		return 1;
+	}
+	return 0;
   });
 
   const [tab, setTab] = useState(show);
