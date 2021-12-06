@@ -45,6 +45,7 @@
   slug: puzzle
   description: Games featuring puzzle elements!
   games:
+    - bloxorz
     - cursor-10
     - fireboy-and-watergirl
     - tetris
