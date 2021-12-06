@@ -43,6 +43,7 @@
   slug: puzzle
   description: Games featuring puzzle elements!
   games:
+    - cursor-10
     - fireboy-and-watergirl
     - tetris
     - the-worlds-hardest-game
