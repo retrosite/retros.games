@@ -12,6 +12,7 @@
   slug: platformer
   description: Games featuring platforming!
   games:
+    - one-button-bob
     - short-life
     - slope
     - vex-3
