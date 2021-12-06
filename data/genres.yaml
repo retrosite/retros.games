@@ -12,6 +12,7 @@
   slug: platformer
   description: Games featuring platforming!
   games:
+    - bullet-bill
     - meatboy
     - one-button-bob
     - short-life
