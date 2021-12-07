@@ -66,6 +66,7 @@
   slug: miscellaneous
   description: Various miscellaneous games!
   games:
+    - amateur-surgeon
     - energy-skate-park
     - google-maps-snake
     - line-rider
