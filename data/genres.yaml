@@ -25,7 +25,6 @@
   description: Games featuring racing!
   games:
     - burnout-drift-3
-    - ducklife4
     - hexgl
     - moto-trials
 - name: Idle
