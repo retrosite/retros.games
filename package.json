@@ -31,7 +31,7 @@
     "react-transition-group": "^4.4.2",
     "rehype-slug": "^4.0.1",
     "sass": "^1.34.1",
-    "three": "^0.130.0",
+    "three": "^0.137.0",
     "typescript": "^4.5.2",
     "webpack": "^5.64.4"
   },
