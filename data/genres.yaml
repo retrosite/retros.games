@@ -38,6 +38,7 @@
   slug: casual
   description: Games featuring casual elements!
   games:
+    - 360snake
     - city-wars
     - helix-jump
     - paper-io-2
