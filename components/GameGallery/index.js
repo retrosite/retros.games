@@ -9,7 +9,7 @@ import { PageContext } from "../../pages/_app";
 import styles from "./index.module.scss";
 
 GameGallery.propTypes = {
-  show: PropTypes.oneOf(["genre", "all", "alphabetical"]),
+  show: PropTypes.oneOf(["genre", "all", "alphabetical", "random"]),
 };
 
 // Gallery that shows all games in various ways with tabs. Show by genre or all.
@@ -42,6 +42,9 @@ export default function GameGallery({ show = "genre" }) {
         matchesSearch(game, searchText)
       );
     }
+    if (view === "random") {
+      return games[Math.floor(Math.random()*games.length)];
+    }
     // Otherwise, return all by date.
     return games;
   }, [games, view, searchText]);
@@ -72,6 +75,14 @@ export default function GameGallery({ show = "genre" }) {
             setSearchText("");
           }}
           active={view === "alphabetical"}
+        />
+        <Clickable
+          text="Random"
+          onClick={() => {
+            setTab("random");
+            setSearchText("");
+          }}
+          active={view === "random"}
         />
 
         <div className={styles.search} data-active={view === "search"}>
