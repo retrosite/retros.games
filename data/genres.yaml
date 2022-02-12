@@ -53,9 +53,11 @@
   description: Games featuring puzzle elements!
   games:
     - bloxorz
+    - breakingthebank
     - classroom
     - crimsonroom
     - cursor-10
+    - escapingtheprison
     - fireboy-and-watergirl
     - impossiblequiz
     - isotetris
@@ -83,7 +85,6 @@
   slug: miscellaneous
   description: Various miscellaneous games!
   games:
-    - amateur-surgeon
     - energy-skate-park
     - google-maps-snake
     - slapthemonkey
