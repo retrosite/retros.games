@@ -53,12 +53,14 @@
   description: Games featuring puzzle elements!
   games:
     - bloxorz
-    - breakingthebank
     - classroom
     - crimsonroom
     - cursor-10
-    - escapingtheprison
     - fireboy-and-watergirl
+    - breakingthebank
+    - escapingtheprison
+    - stealingthediamond
+    - infiltratingtheairship
     - impossiblequiz
     - isotetris
     - portal
@@ -68,7 +70,6 @@
     - riddleschool3
     - riddleschool4
     - riddleschool5
-    - stealingthediamond
     - tetris
     - the-worlds-hardest-game
 - name: Sandbox
