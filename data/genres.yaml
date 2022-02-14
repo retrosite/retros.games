@@ -57,20 +57,11 @@
     - crimsonroom
     - cursor-10
     - fireboy-and-watergirl
-    - breakingthebank
-    - escapingtheprison
-    - stealingthediamond
-    - infiltratingtheairship
-    - fleeingthecomplex
     - impossiblequiz
     - isotetris
     - portal
     - rkills
     - riddleschool
-    - riddleschool2
-    - riddleschool3
-    - riddleschool4
-    - riddleschool5
     - tetris
     - the-worlds-hardest-game
 - name: Sandbox
@@ -84,10 +75,12 @@
   games:
     - dino
     - road-crossing
+    - robot-unicorn-attack
 - name: Miscellaneous
   slug: miscellaneous
   description: Various miscellaneous games!
   games:
+    - amateur-surgeon
     - energy-skate-park
     - google-maps-snake
     - slapthemonkey
