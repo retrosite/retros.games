@@ -84,6 +84,7 @@
   slug: arcade
   description: Various arcade games!
   games:
+    - bushshootout
     - dino
     - road-crossing
     - robot-unicorn-attack
