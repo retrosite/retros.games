@@ -87,6 +87,7 @@
   slug: arcade
   description: Various arcade games!
   games:
+    - 4secondfury
     - bushshootout
     - dino
     - road-crossing
