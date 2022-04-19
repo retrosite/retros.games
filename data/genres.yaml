@@ -83,6 +83,7 @@
   description: Games featuring sandbox elements!
   games:
     - godsplayingfield
+    - interactivebuddy
     - minecraft-classic
 - name: Arcade
   slug: arcade
