@@ -90,6 +90,7 @@
   description: Various arcade games!
   games:
     - bushshootout
+    - copter
     - dino
     - foursecondfury
     - grid16
