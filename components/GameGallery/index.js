@@ -43,7 +43,7 @@ export default function GameGallery({ show = "genre" }) {
       );
     }
     if (view === "random") {
-      return games[Math.floor(Math.random()*games.length)];
+      return sorted_games[Math.floor(Math.random() * sorted_games.length)];
     }
     // Otherwise, return all by date.
     return games;
