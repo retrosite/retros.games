@@ -103,6 +103,10 @@ export default function GameGallery({ show = "genre" }) {
           ))}
         </Center>
       )}
+      {view === "random" && (
+        filteredGames.map((game) => (
+          <GameCard key={game.slug} id={game.slug} />
+        )))}
       {(view === "all" || view === "search") &&
         filteredGames.map((game) => (
           <GameCard key={game.slug} id={game.slug} />
