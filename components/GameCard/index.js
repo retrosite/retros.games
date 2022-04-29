@@ -41,8 +41,7 @@ export default function GameCard({
   else Component = Link;
 
   // Get game details.
-  let { slug, title, description, date, thumbnail, type, genre } =
-    game;
+  let { slug, title, description, date, thumbnail, type, genre } = game;
   if (date) date = formatDate(date);
 
   return (
@@ -70,11 +69,7 @@ export default function GameCard({
         {(type !== undefined || date) && !mini && (
           <span>
             {type !== undefined && (
-              <Chip
-                text={type}
-                mini={mini}
-                tooltip={`In genre "${genre}"`}
-              />
+              <Chip text={type} mini={mini} tooltip={`In genre "${genre}"`} />
             )}
             {date && <span>{date}</span>}{" "}
           </span>

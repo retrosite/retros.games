@@ -15,16 +15,16 @@ GameGallery.propTypes = {
 // Gallery that shows all games in various ways with tabs. Show by genre or all.
 export default function GameGallery({ show = "genre" }) {
   const { games } = useContext(PageContext);
-  const sorted_games = [...games].sort(function(a, b) {
-	var nameA = a.name.toUpperCase();
-	var nameB = b.name.toUpperCase();
-	if (nameA < nameB) {
-		return -1;
-	}
-	if (nameA > nameB) {
-		return 1;
-	}
-	return 0;
+  const sorted_games = [...games].sort(function (a, b) {
+    var nameA = a.name.toUpperCase();
+    var nameB = b.name.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
   });
 
   const [tab, setTab] = useState(show);
@@ -38,9 +38,7 @@ export default function GameGallery({ show = "genre" }) {
       return sorted_games;
     }
     if (view === "search") {
-      return sorted_games.filter((game) =>
-        matchesSearch(game, searchText)
-      );
+      return sorted_games.filter((game) => matchesSearch(game, searchText));
     }
     if (view === "random") {
       return sorted_games[Math.floor(Math.random() * sorted_games.length)];
@@ -105,16 +103,17 @@ export default function GameGallery({ show = "genre" }) {
       )}
       {view === "random" && (
         <GameCard key={filteredGames.slug} id={filteredGames.slug} />
-        )}
+      )}
       {(view === "all" || view === "search") &&
         filteredGames.map((game) => (
           <GameCard key={game.slug} id={game.slug} />
         ))}
-      {(view === "all" || view === "search" || view === "alphabetical") && filteredGames.length === 0 && (
-        <div className={styles.no_results}>
-          <p>No games found.</p>
-        </div>
-      )}
+      {(view === "all" || view === "search" || view === "alphabetical") &&
+        filteredGames.length === 0 && (
+          <div className={styles.no_results}>
+            <p>No games found.</p>
+          </div>
+        )}
       {view === "alphabetical" &&
         filteredGames.map((game) => (
           <GameCard key={game.slug} id={game.slug} />

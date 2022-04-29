@@ -9,11 +9,16 @@
   padding: 10px;
   font-family: $serif;
   font-weight: $semi-bold;
-	color: #fff;
+  color: #fff;
   text-align: left;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(90deg, #db469f 70%, #9fb2e6 90%, #f0f6fc);
-	border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    #db469f 70%,
+    #9fb2e6 90%,
+    #f0f6fc
+  );
+  border-bottom: 5px solid;
 
   i {
     margin-right: 10px;

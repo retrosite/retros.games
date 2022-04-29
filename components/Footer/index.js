@@ -4,7 +4,9 @@ import styles from "./index.module.scss";
 const Footer = () => (
   <footer className={styles.footer}>
     <Copyright />
-    <a className={styles.discord} href="https://discord.gg/jMD9VBnRjK"><i className="fab fa-discord"></i></a>
+    <a className={styles.discord} href="https://discord.gg/jMD9VBnRjK">
+      <i className="fab fa-discord"></i>
+    </a>
   </footer>
 );
 

@@ -18,7 +18,12 @@ $phone: 700px;
   border-left: 0;
   border-bottom: 0;
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, #db469f 70%, #9fb2e6 90%, #f0f6fc);
+  border-image-source: linear-gradient(
+    90deg,
+    #db469f 70%,
+    #9fb2e6 90%,
+    #f0f6fc
+  );
 
   &[data-big="true"] {
     min-height: 250px;

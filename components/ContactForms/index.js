@@ -50,8 +50,8 @@ export function ContactFormReceivedMessage() {
         <div className={styles.receivedFormThanks}>
           <strong>Thank you for your suggestion!</strong>
           <div>
-            We read every message, but don't always use every suggestion.
-            We hope you understand.
+            We read every message, but don't always use every suggestion. We
+            hope you understand.
           </div>
         </div>
       );
