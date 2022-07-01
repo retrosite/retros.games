@@ -2,6 +2,7 @@
   slug: action
   description: Games featuring action and adventure!
   games:
+    - abobo
     - alien-hominid
     - color-tunnel
     - dadnme
