@@ -10,7 +10,7 @@ body,
   min-height: 100vh;
   font-size: 12pt;
   font-family: $serif;
-  background-color: #13102B;
+  background-color: #13102b;
 }
 
 #__next {
@@ -24,12 +24,12 @@ body,
 
 @font-face {
   font-family: "Retronoid";
-  src: url('/fonts/Retronoid.ttf');
+  src: url("/fonts/Retronoid.ttf");
 }
 
 @font-face {
   font-family: "Retronoid Italic";
-  src: url('/fonts/Retronoid Italic.ttf');
+  src: url("/fonts/Retronoid Italic.ttf");
   font-style: italic, oblique;
 }
 

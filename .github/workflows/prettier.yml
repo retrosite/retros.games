@@ -1,0 +1,29 @@
+name: prettier
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Set up repo
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - run: npm install --global yarn
+    - run: yarn install
+    - run: yarn run format
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply Prettier

@@ -6,10 +6,7 @@ import genres from "../../data/genres.yaml";
 import styles from "./index.module.scss";
 
 export default function Game({ defaultToWide }) {
-  const {
-    name: url,
-    genre: genreName,
-  } = useContext(PageContext);
+  const { name: url, genre: genreName } = useContext(PageContext);
 
   const genre = genres.find(({ name }) => name === genreName);
 
@@ -18,13 +15,8 @@ export default function Game({ defaultToWide }) {
   if (!url && !genre) return null;
 
   return (
-    <Section
-      id="game-section"
-      width={wideGame ? "wide" : "narrow"}
-    >
-      <div
-        className={styles.gameArea}
-      >
+    <Section id="game-section" width={wideGame ? "wide" : "narrow"}>
+      <div className={styles.gameArea}>
         {genre && (
           <Link href={`/genres/${genre.slug}`}>
             <a className={styles.genreLink}>
@@ -42,7 +34,7 @@ export default function Game({ defaultToWide }) {
                 src={`/cdn/games/${url}/index.html`}
               />
             </div>
-        </div>
+          </div>
         )}
       </div>
       {wideGame && <div className={styles.bottomSpacer} />}

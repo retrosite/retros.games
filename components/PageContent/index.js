@@ -1,7 +1,4 @@
-import {
-  useContext,
-  Fragment,
-} from "react";
+import { useContext, Fragment } from "react";
 import { MDXRemote } from "next-mdx-remote";
 import Section from "../Section";
 import components from "../";

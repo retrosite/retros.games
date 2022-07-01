@@ -2,3 +2,7 @@
 
 *.mdx
 *.yaml
+
+# Used for Prettier workflow
+public/cdn
+.github

@@ -48,27 +48,15 @@ const Nav = () => {
         <span>{open ? "Close" : "Menu"}</span>
       </button>
 
-      <NavLink
-        link="/#games"
-        text="Games"
-      />
+      <NavLink link="/#games" text="Games" />
 
-      <NavLink
-        link="/blog"
-        text="Blog"
-      />
+      <NavLink link="/blog" text="Blog" />
 
       <div className={styles.break} />
 
-      <NavLink
-        link="/monkeys"
-        text="Monkeys"
-      />
+      <NavLink link="/monkeys" text="Monkeys" />
 
-      <NavLink
-        link="/contact"
-        text="Contact"
-      />
+      <NavLink link="/contact" text="Contact" />
     </nav>
   );
 };
@@ -76,9 +64,9 @@ const Nav = () => {
 // Nav bar link
 const NavLink = ({ link, text, icon }) => (
   <Link href={link} passHref>
-      <a className={styles.link}>
-        {text}
-        {icon && <i className={icon} />}
-      </a>
+    <a className={styles.link}>
+      {text}
+      {icon && <i className={icon} />}
+    </a>
   </Link>
 );

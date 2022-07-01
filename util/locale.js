@@ -4,7 +4,12 @@ export const formatDate = (dateString) => {
     let locale;
     if (typeof window !== "undefined") locale = window?.navigator?.language;
     else locale = "en-US";
-    const options = { day: "numeric", month: "short", year: "numeric", timeZone: "UTC"};
+    const options = {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC",
+    };
     return new Date(dateString).toLocaleDateString(locale, options);
   } catch (error) {
     return new Date(dateString).toLocaleDateString();

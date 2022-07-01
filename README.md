@@ -12,6 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Developing
 
 To develop when you can't use Visual Studio Code:
+
 1. Visit [the repository's github.dev page](https://github.dev/retrosite/retros.games)
 2. Make your changes and click the Source Control button on the side.
 3. Type in a good commit message and click the checkmark at the top once you're ready to deploy.

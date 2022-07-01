@@ -42,13 +42,13 @@ const Source = () => {
       {name && (
         <div>
           <i className="fas fa-desktop"></i>
-            <span>
-              {name && (
-                <Link href={`/cdn/games/${name}/index.html`}>
-                  <a>Fullscreen</a>
-                </Link>
-              )}
-            </span>
+          <span>
+            {name && (
+              <Link href={`/cdn/games/${name}/index.html`}>
+                <a>Fullscreen</a>
+              </Link>
+            )}
+          </span>
         </div>
       )}
     </>

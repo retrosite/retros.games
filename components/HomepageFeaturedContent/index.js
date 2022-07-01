@@ -17,7 +17,11 @@ HomepageFeaturedContent.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default function HomepageFeaturedContent({ title, subtitle="", children }) {
+export default function HomepageFeaturedContent({
+  title,
+  subtitle = "",
+  children,
+}) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
@@ -39,20 +43,18 @@ HomepageFeaturedItem.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export function HomepageFeaturedItem({ game, caption, children, link="" }) {
-  if(link == ""){
-    link = `/games/${game}`
+export function HomepageFeaturedItem({ game, caption, children, link = "" }) {
+  if (link == "") {
+    link = `/games/${game}`;
   }
   return (
     <FeaturedItemContext.Provider value={{ game }}>
       <div>
-        {game && <div className={styles.itemButtons}>
-          <Clickable
-            link={`${link}`}
-            text="Play"
-            icon="fas fa-gamepad"
-          />
-        </div>}
+        {game && (
+          <div className={styles.itemButtons}>
+            <Clickable link={`${link}`} text="Play" icon="fas fa-gamepad" />
+          </div>
+        )}
 
         <figure className={styles.itemFigure}>
           {children}
@@ -81,16 +83,15 @@ export function HomepageFeaturedGame({
   const gameRef = useRef();
 
   return (
-      <a className={styles.gameLink}>
-        <img
-          ref={gameRef}
-          className={styles.game}
-          alt={alt}
-          width={width}
-          src={src}
-        >
-        </img>
-      </a>
+    <a className={styles.gameLink}>
+      <img
+        ref={gameRef}
+        className={styles.game}
+        alt={alt}
+        width={width}
+        src={src}
+      ></img>
+    </a>
   );
 }
 

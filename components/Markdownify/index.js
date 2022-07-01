@@ -16,9 +16,7 @@ Markdownify.propTypes = {
 export default function Markdownify({ children, noParagraph = false }) {
   if (typeof children === "string") {
     return (
-      <ReactMarkdown
-        components={noParagraph ? { p: "span" } : {}}
-      >
+      <ReactMarkdown components={noParagraph ? { p: "span" } : {}}>
         {children}
       </ReactMarkdown>
     );

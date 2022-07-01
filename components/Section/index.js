@@ -12,18 +12,10 @@ Section.propTypes = {
 // all. See the PageContent component.
 const SectionContext = createContext({ width: "normal" });
 
-export default function Section({
-  children,
-  width = "normal",
-  ...props
-}) {
+export default function Section({ children, width = "normal", ...props }) {
   return (
     <SectionContext.Provider value={{ width }}>
-      <section
-        {...props}
-        className={styles.section}
-        data-width={width}
-      >
+      <section {...props} className={styles.section} data-width={width}>
         <div className={styles.wrapper}>{children}</div>
       </section>
     </SectionContext.Provider>

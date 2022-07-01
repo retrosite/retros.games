@@ -10,11 +10,10 @@ const GameLayout = () => {
   const { content } = useContext(PageContext);
   return (
     <NormalLayout>
-      <Game/>
+      <Game />
       <GameDetails />
       <div />
       <PageContent />
-
     </NormalLayout>
   );
 };
