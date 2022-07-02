@@ -56,6 +56,7 @@
     - paper-io-2
     - rolling-sky
     - snowbattle-io
+    - therightmix
 - name: Puzzle
   slug: puzzle
   description: Games featuring puzzle elements!
