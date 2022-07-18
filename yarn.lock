@@ -1129,9 +1129,9 @@ convert-source-map@^1.7.0:
     safe-buffer "~5.1.1"
 
 core-js-pure@^3.19.0:
-  version "3.19.2"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.19.2.tgz#26b5bfb503178cff6e3e115bc2ba6c6419383680"
-  integrity sha512-5LkcgQEy8pFeVnd/zomkUBSwnmIxuF1C8E9KrMAbOc8f34IBT9RGvTYeNDdp1PnvMJrrVhvk1hg/yVV5h/znlg==
+  version "3.23.5"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.23.5.tgz#23daaa9af9230e50f10b0fa4b8e6b87402be4c33"
+  integrity sha512-8t78LdpKSuCq4pJYCYk8hl7XEkAX+BP16yRIwL3AanTksxuEf7CM83vRyctmiEL8NDZ3jpUcv56fk9/zG3aIuw==
 
 cross-spawn@^7.0.2:
   version "7.0.3"
