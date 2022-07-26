@@ -50,6 +50,7 @@
   games:
     - 360snake
     - city-wars
+    - double-wires
     - helix-jump
     - homerun
     - learntofly
