@@ -61,6 +61,7 @@
   slug: puzzle
   description: Games featuring puzzle elements!
   games:
+    - ball
     - bloxorz
     - breakingthebank
     - escapingtheprison
