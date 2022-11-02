@@ -34,6 +34,7 @@
   description: Games featuring racing!
   games:
     - burnout-drift-3
+    - cubefield
     - ducklife
     - hexgl
     - moto-trials
