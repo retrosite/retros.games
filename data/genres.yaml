@@ -97,6 +97,7 @@
   slug: arcade
   description: Various arcade games!
   games:
+    - bodyladder
     - bushshootout
     - copter
     - dino
