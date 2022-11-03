@@ -53,6 +53,7 @@
   games:
     - 360snake
     - city-wars
+    - cursorinvisible
     - double-wires
     - helix-jump
     - homerun
